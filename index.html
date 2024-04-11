@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3DCard Tilt&Parallax</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <!-- <div class="card purple" data-tilt> -->
+  <div class="card purple">
+    <div class="product">
+      <span class="number">01</span>
+      <span class="sneakers">SNEAKERS</span>
+      <span class="price">$69.9</span>
+      <img src="/images/shoesPurple.png">
+    </div>
+    <div class="title">
+      <h2>NIKE PURPLE</h2>
+    </div>
+  </div>
+
+  <!-- <div class="card pink" data-tilt> -->
+  <div class="card pink">
+    <div class="product">
+      <span class="number">02</span>
+      <span class="sneakers">SNEAKERS</span>
+      <span class="price">$69.9</span>
+      <img src="/images/shoesPink.png">
+    </div>
+    <div class="title">
+      <h2>NIKE PINK</h2>
+    </div>
+  </div>
+
+  <!-- <div class="card green" data-tilt> -->
+  <div class="card green">
+    <div class="product">
+      <span class="number">03</span>
+      <span class="sneakers">SNEAKERS</span>
+      <span class="price">$69.9</span>
+      <img src="/images/shoesGreen.png">
+    </div>
+    <div class="title">
+      <h2>NIKE GREEN</h2>
+    </div>
+  </div>
+  
+  <script src="vanilla-tilt.js"></script>
+  <script type="text/javascript">
+    VanillaTilt.init(document.querySelectorAll(".card"), {
+      max: 25,
+      speed: 3000,
+      glare: true,
+      'max-glare': 0.5,
+    });
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,900;1,800&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  transition: 0.3s ease-in-out;
+}
+
+body {
+  background: #120D24;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.card {
+  width: 220px;
+  height: 340px;
+  border-radius: 12px;
+  transform-style: preserve-3d;
+}
+
+.card.purple {
+  background: linear-gradient(135deg,#6e54f0, #232b71);
+}
+
+.card.pink {
+  background: linear-gradient(135deg, #f054e3, #5c2371);
+}
+
+.card.green {
+  background: linear-gradient(135deg, #69f054, #237147);
+}
+
+.card .product {
+  height: 85%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  position: relative;
+  transform-style: preserve-3d;
+}
+
+.product .number {
+  font-size: 80px;
+  line-height:  80px;
+  font-style: italic;
+  opacity: 0.25;
+}
+
+.product .sneakers{
+  font-size: 35px;
+  line-height: 35px;
+  font-style: italic;
+  opacity: 0.7;
+}
+
+.product img{
+  height: 420px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-35%, -45%, 0);
+  pointer-events: none;
+}
+
+.product .price {
+  background: rgba(255, 255, 255, 0.15);
+  margin-top: auto;
+  margin-left: auto;
+  margin-right: -20px;
+  padding: 5px 20px;
+  border-radius: 99px 0 0 99px;
+}
+
+.card .title {
+  height: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0 0 12px 12px;
+}
+
+.card.purple .title {
+  background: #7e68eb;
+}
+
+.card.pink .title {
+  background: #eb69e0;
+}
+
+.card.green .title {
+  background: #7ced6a;
+}
+
+/* h2{
+  transform-style: preserve-3d;
+  transform: translateZ(80px);
+} */
+
+.card:hover .product img{
+  transform: translate3d(-50%, -40%, 80px);
+}
+
+.card:hover .product .number{
+  transform: translateZ(40px);
+  opacity: 1;
+}
+
+.card:hover .product .sneakers{
+  transform: translateZ(40px);
+}
+
+.card:hover .product .price{
+  transform: translateZ(40px);
+}
+
+.card:hover .title{
+  transform: translateZ(60px);
+}
+
+
